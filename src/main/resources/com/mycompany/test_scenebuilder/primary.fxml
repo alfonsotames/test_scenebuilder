@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.test_scenebuilder.PrimaryController">
+       <children>
+          <Label text="jajajaja" />
+      <LineChart id="tester" fx:id="chart">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT">
+               <cursor>
+                  <Cursor fx:constant="CROSSHAIR" />
+               </cursor></NumberAxis>
+        </yAxis>
+      </LineChart>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+                <Button fx:id="primaryButton" onAction="#switchToSecondary" text="Switch to Secondary View" />
+            <Button mnemonicParsing="false" onMouseClicked="#testFuncion" text="Button" />
+         </children>
+      </HBox>
+       </children>
+       <padding>
+          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+       </padding>
+    </VBox>
